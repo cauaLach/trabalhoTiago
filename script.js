@@ -26,3 +26,17 @@ botao02.addEventListener("click", () => {
     var resultadoBascara = document.getElementById("resultadoBascara")
     resultadoBascara.innerHTML += "<p>"+ ("X¹: " + bascara1 + ", X²: " + bascara2) + "</p>"
 })
+
+var botao03 = document.getElementById("botao03")
+botao03.addEventListener("click", ()=>{
+    var cateto = document.getElementById("cateto")
+    var cateto02 = document.getElementById("cateto02")
+
+    var a = parseInt(cateto.value)
+    var b = parseInt(cateto02.value)
+
+    var hipotenusa = Math.sqrt(((a * a) + (b * b)))
+
+    var resultadoPitagoras = document.getElementById("resultadoPitagoras")
+    resultadoPitagoras.innerHTML += "<p>" + ("Hipotenusa = " + hipotenusa) + "</p>"
+})
